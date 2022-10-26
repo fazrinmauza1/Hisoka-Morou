@@ -222,7 +222,7 @@ async function startHisoka() {
 	hisoka.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
     }
     
-    hisoka.public = true
+    hisoka.public = false
 
     hisoka.serializeM = (m) => smsg(hisoka, m, store)
 
